@@ -12,14 +12,14 @@ Kompilacja i uruchomienie
 Skompiluj kod:
 
 
-g++ chat_server.cpp -o server.exe -lws2_32 -std=c++11
-
+g++ chat_server.cpp -o chat.exe -lws2_32 -std=c++11
 g++ chat_client.cpp -o client.exe -lws2_32 -std=c++11
-
 Uruchom program serwera:
 
-./server.exe
+
+./chat.exe
 Uruchom program klienta (w nowym terminalu – można uruchomić kilka instancji klienta):
+
 
 ./client.exe
 Po uruchomieniu klienta program poprosi o wpisanie nicku, który będzie wyświetlany przy każdej wysyłanej wiadomości.
@@ -73,12 +73,3 @@ Funkcja broadcast_message używa blokady przy wysyłaniu wiadomości do wszystki
 
 5. Dodatkowe informacje
 Projekt realizuje podstawowe funkcje czatu w architekturze klient-serwer i demonstruje zarządzanie wieloma połączeniami jednocześnie za pomocą wątków. Synchronizacja dostępu do wspólnych zasobów została zaimplementowana przy użyciu mechanizmów Windows API, co pozwala na prawidłowe działanie serwera i klientów.
-
-
-
-
-
-
-
-
-
