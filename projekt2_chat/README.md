@@ -11,8 +11,11 @@ Kompilacja i uruchomienie
 
 Skompiluj kod:
 
+
 g++ chat_server.cpp -o server.exe -lws2_32 -std=c++11
+
 g++ chat_client.cpp -o client.exe -lws2_32 -std=c++11
+
 Uruchom program serwera:
 
 ./server.exe
